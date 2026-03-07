@@ -9,110 +9,88 @@
 </head>
 <body>
 
+  <!-- HEADER -->
   <header>
     <img src="FotoPerfil.jpg" alt="Foto de Mateo Bragunde" class="foto-perfil">
     <h1>Mateo Bragunde</h1>
-    <p>Desarrollador en formación | C# · ASP.NET Core · SQL · Java · HTML/CSS/JS</p>
+    <p>Backend Developer en formación | C# · ASP.NET Core · SQL · Java · HTML/CSS/JS</p>
+    <!-- Badges -->
+    <div class="badges">
+      <img src="https://img.shields.io/badge/C%23-.NET-blue" alt="C#">
+      <img src="https://img.shields.io/badge/ASP.NET_Core-Web_API-purple" alt="ASP.NET Core">
+      <img src="https://img.shields.io/badge/SQL_Server-Database-red" alt="SQL Server">
+      <img src="https://img.shields.io/badge/Azure-Cloud-blue" alt="Azure">
+      <img src="https://img.shields.io/badge/Git-Version_Control-orange" alt="Git">
+      <img src="https://img.shields.io/badge/JavaScript-Language-yellow" alt="JavaScript">
+    </div>
   </header>
 
+  <!-- SOBRE MÍ -->
   <section id="sobre-mi">
     <h2>Sobre mí</h2>
     <p>
       Soy estudiante de Analista en Tecnologías de la Información en la Universidad ORT (Montevideo, Uruguay).  
-      Actualmente trabajo en ANCAP (atención en pista), mientras me formo como Analista en TI.  
-      Me apasiona el desarrollo de software y crear proyectos que combinen lógica, estructura y diseño.
+      Actualmente trabajo en ANCAP mientras me sigo formando en desarrollo de software y construyendo proyectos académicos.  
+      Me apasiona el desarrollo <strong>Back-End</strong>, la arquitectura de aplicaciones y el manejo de datos.
     </p>
     <ul>
       <li>💡 Me gusta aplicar lo aprendido para resolver necesidades reales.</li>
       <li>🌱 Siempre busco mejorar y aprender algo nuevo.</li>
-      <li>⚙️ Me interesa especialmente el desarrollo Back-End.</li>
+      <li>⚙️ Me interesa especialmente el desarrollo Back-End y la gestión de datos.</li>
     </ul>
   </section>
 
+  <!-- TECNOLOGÍAS -->
   <section id="tecnologias">
     <h2>Tecnologías y herramientas</h2>
     <p>
-      C# · ASP.NET Core · Entity Framework · SQL Server · Java · HTML · CSS · Bootstrap · 
-      JavaScript · Git · GitHub · Visual Studio · VS Code
+      C# · ASP.NET Core · Entity Framework · SQL Server · LINQ · Azure · Java · HTML · CSS · JavaScript  
+      Git · GitHub · Visual Studio · VS Code
     </p>
   </section>
 
+  <!-- PROYECTOS ACADÉMICOS -->
   <section id="proyectos">
-    <h2>Proyectos personales</h2>
+    <h2>Proyectos académicos destacados</h2>
 
     <div class="proyecto">
-      <h3>Alanma Deco</h3>
-      <p>Sitio web artesanal (macramé) con diseño responsive.</p>
-      <p class="tec">HTML · CSS · JS</p>
+      <h3>Roteo II ⭐</h3>
+      <p>Sistema web con arquitectura separada <strong>WebApp + API</strong>, deploy en Azure y base de datos funcional.</p>
+      <ul>
+        <li>Arquitectura por capas</li>
+        <li>DTOs y Mappers</li>
+        <li>Entity Framework y Swagger</li>
+        <li>Funcionalidades: reseteo de contraseña y gestión de pagos</li>
+      </ul>
+      <p class="tec">C# · ASP.NET Core · Entity Framework · SQL Server · Azure</p>
     </div>
 
-    <h2>Proyectos académicos</h2>
-
     <div class="proyecto">
-      <h3>Aerolínea (I)</h3>
-      <p>Sistema web con roles de Administrador y Cliente.</p>
-      <p class="tec">HTML · CSS · JS</p>
-    </div>
-
-    <div class="proyecto">
-      <h3>Aerolínea (II)</h3>
-      <p>Versión desarrollada en C# con ASP.NET MVC. Permite gestión de vuelos y usuarios con distintos roles.</p>
+      <h3>Aerolínea MVC</h3>
+      <p>Sistema web de gestión de vuelos con roles de usuario y administrador.</p>
       <p class="tec">C# · ASP.NET MVC</p>
     </div>
 
     <div class="proyecto">
-      <h3>Roteo(I)</h3>
-      <p>
-        Sistema interno desarrollado con arquitectura por capas, DTOs, Mappers y Entity Framework.  
-        Incluye login por roles y manejo de datos con SQL Server.
-      </p>
-      <p class="tec">C# · ASP.NET Core MVC · Entity Framework · SQL Server</p>
+      <h3>Clínica New Age</h3>
+      <p>Sistema de base de datos avanzado con procedimientos almacenados, funciones, triggers y consultas complejas. Integración conceptual con MongoDB.</p>
+      <p class="tec">SQL Server · T-SQL · MongoDB</p>
     </div>
 
-    <div class="proyecto">
-      <h3>Roteo(II)</h3>
-      <p>
-        Sistema interno desarrollado con arquitectura por capas, DTOs, Mappers y Entity Framework.
-        Implementando la separación de proyectos (WebAPP y API), manejo de Swagger y deploy en Azure con base de datos.
-        Se trabajó con funciones como reseteo de contraseña, creación de pagos y manejo de los mismos.
-      </p>
-      <p class="tec">C# · ASP.NET Core MVC · Entity Framework · SQL Server · Azure</p>
-    </div>
-
-    <div class="proyecto">
-      <h3>Sistema Bicicletas (I)</h3>
-      <p>Estructuras de datos genéricas con listas y nodos.</p>
-      <p class="tec">Java</p>
-    </div>
-
-    <div class="proyecto">
-      <h3>Sistema Bicicletas (II)</h3>
-      <p>Segundo avance del proyecto anteriormente nombrado. Implementando pilas,colas y recursividad.</p>
-      <p class="tec">Java</p>
-    </div>
-
-    <div class="proyecto">
-      <h3>SQL Avanzado</h3>
-      <p>Procedimientos, funciones, triggers, consultas avanzadas en SMS. Implementando a su vez uso de MongoDB.</p>
-      <p class="tec">SQL Server</p>
-    </div>
   </section>
 
+  <!-- CONTACTO -->
   <section id="contacto">
     <h2>Contacto</h2>
     <p>📧 <a href="mailto:mateobragunde11@gmail.com">mateobragunde11@gmail.com</a></p>
-    <p>📧 <a href="mailto:mateobragunde1810@outlook.com">mateobragunde1810@outlook.com</a></p>
     <p>💼 <a href="https://www.linkedin.com/in/mateo-bragunde-dufour-627602361" target="_blank">LinkedIn</a></p>
+    <p>🌐 <a href="https://MateoB18.github.io" target="_blank">Portfolio Web</a></p>
   </section>
 
+  <!-- FOOTER -->
   <footer>
     <p>© 2025 Mateo Bragunde</p>
   </footer>
 
 </body>
 </html>
-
-
-
-
-
