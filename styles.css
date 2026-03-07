@@ -35,6 +35,27 @@ header p {
   color: #cccccc;
 }
 
+.badges {
+  margin-top: 1rem;
+}
+
+.badges img {
+  margin: 0 0.3rem;
+  height: 24px;
+}
+
+/* SOBRE MI */
+section#sobre-mi ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
+section#sobre-mi ul li {
+  margin: 0.5rem 0;
+  color: #d0d0d0;
+}
+
 /* SECCIONES */
 section {
   max-width: 900px;
@@ -47,17 +68,6 @@ h2 {
   display: inline-block;
   margin-bottom: 1rem;
   color: #4da3ff;
-}
-
-/* LISTAS */
-ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-ul li {
-  margin: 0.5rem 0;
-  color: #d0d0d0;
 }
 
 /* PROYECTOS */
@@ -74,9 +84,26 @@ ul li {
   color: #ffffff;
 }
 
+.proyecto ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.proyecto ul li {
+  margin: 0.3rem 0;
+  color: #d0d0d0;
+}
+
 .proyecto .tec {
   font-size: 0.9rem;
   color: #bbbbbb;
+  margin-top: 0.5rem;
+}
+
+/* TECNOLOGÍAS */
+section#tecnologias p {
+  margin-top: 1rem;
 }
 
 /* LINKS */
@@ -88,6 +115,11 @@ a {
 a:hover {
   text-decoration: underline;
   color: #76c1ff;
+}
+
+/* CONTACTO */
+section#contacto p {
+  margin: 0.5rem 0;
 }
 
 /* FOOTER */
