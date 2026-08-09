@@ -1,97 +1,169 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mateo Bragunde | Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mateo Bragunde | Desarrollador Full-Stack</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <img src="FotoPerfil.jpg" alt="Foto de Mateo Bragunde" class="foto-perfil">
-    <h1>Mateo Bragunde</h1>
-    <p>Backend Developer en formación | C# · ASP.NET Core · SQL · Java · HTML/CSS/JS</p>
-    <!-- Badges -->
-    <div class="badges">
-      <img src="https://img.shields.io/badge/C%23-.NET-blue" alt="C#">
-      <img src="https://img.shields.io/badge/ASP.NET_Core-Web_API-purple" alt="ASP.NET Core">
-      <img src="https://img.shields.io/badge/SQL_Server-Database-red" alt="SQL Server">
-      <img src="https://img.shields.io/badge/Azure-Cloud-blue" alt="Azure">
-      <img src="https://img.shields.io/badge/Git-Version_Control-orange" alt="Git">
-      <img src="https://img.shields.io/badge/JavaScript-Language-yellow" alt="JavaScript">
-    </div>
-  </header>
+    <header class="encabezadoNavegacion">
+        <div class="contenedor contenedorNavegacion">
+            <a href="#" class="marca">&lt;Mateo.dev /&gt;</a>
+            <nav class="barraNavegacion">
+                <ul class="listaNavegacion">
+                    <li><a href="#inicio" class="enlaceNavegacion">Inicio</a></li>
+                    <li><a href="#sobreMi" class="enlaceNavegacion">Sobre mí</a></li>
+                    <li><a href="#tecnologias" class="enlaceNavegacion">Tecnologías</a></li>
+                    <li><a href="#proyectos" class="enlaceNavegacion">Proyectos</a></li>
+                    <li><a href="#contacto" class="enlaceNavegacion">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <!-- SOBRE MÍ -->
-  <section id="sobre-mi">
-    <h2>Sobre mí</h2>
-    <p>
-      Soy estudiante de Analista en Tecnologías de la Información en la Universidad ORT (Montevideo, Uruguay).  
-      Actualmente trabajo en ANCAP mientras me sigo formando en desarrollo de software y construyendo proyectos académicos.  
-      Me apasiona el desarrollo <strong>Back-End</strong>, la arquitectura de aplicaciones y el manejo de datos.
-    </p>
-    <ul>
-      <li>💡 Me gusta aplicar lo aprendido para resolver necesidades reales.</li>
-      <li>🌱 Siempre busco mejorar y aprender algo nuevo.</li>
-      <li>⚙️ Me interesa especialmente el desarrollo Back-End y la gestión de datos.</li>
-    </ul>
-  </section>
+    <section id="inicio" class="seccionInicio">
+        <div class="contenedor contenedorInicio">
+            <div class="bloqueAvatar">
+                <div class="marcoAvatar">
+                    <img src="img/FotoPerfil.jpg" alt="Foto de Mateo Bragunde" class="imagenPerfil">
+                </div>
+            </div>
 
-  <!-- TECNOLOGÍAS -->
-  <section id="tecnologias">
-    <h2>Tecnologías y herramientas</h2>
-    <p>
-      C# · ASP.NET Core · Entity Framework · SQL Server · LINQ · Azure · Java · HTML · CSS · JavaScript  
-      Git · GitHub · Visual Studio · VS Code
-    </p>
-  </section>
+            <div class="contenidoInicio">
+                <span class="insigniaEstado"><i class="fa-solid fa-circle"></i> Disponible para oportunidades IT</span>
+                <h1>¡Hola! Soy <span class="textoResaltado">Mateo Bragunde</span></h1>
+                <h2>Desarrollador Full-Stack | React • Node.js • .NET • C#</h2>
+                <p>Desarrollador Full-Stack con sólida experiencia en soluciones web integrales. Combino interfaces interactivas en el Front-End (<strong>React, JavaScript ES6+, Bootstrap, CSS3</strong>) con arquitecturas robustas en el Back-End (<strong>C# / .NET Core, Node.js, Java, SQL Server</strong>).</p>
+                
+                <div class="botonesInicio">
+                    <a href="#contacto" class="boton botonPrincipal"><i class="fa-solid fa-paper-plane"></i> Contactar</a>
+                    <a href="#proyectos" class="boton botonSecundario"><i class="fa-solid fa-code"></i> Ver Proyectos</a>
+                </div>
 
-  <!-- PROYECTOS ACADÉMICOS -->
-  <section id="proyectos">
-    <h2>Proyectos académicos destacados</h2>
+                <div class="enlacesSociales">
+                    <a href="https://github.com/MateoB18" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/mateo-bragunde-dufour-627602361" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:mateobragunde11@gmail.com" aria-label="Correo"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="proyecto">
-      <h3>Roteo II ⭐</h3>
-      <p>Sistema web con arquitectura separada <strong>WebApp + API</strong>, deploy en Azure y base de datos funcional.</p>
-      <ul>
-        <li>Arquitectura por capas</li>
-        <li>DTOs y Mappers</li>
-        <li>Entity Framework y Swagger</li>
-        <li>Funcionalidades: reseteo de contraseña y gestión de pagos</li>
-      </ul>
-      <p class="tec">C# · ASP.NET Core · Entity Framework · SQL Server · Azure</p>
-    </div>
+    <section id="sobreMi" class="seccionGenerica">
+        <div class="contenedor">
+            <h2 class="tituloSeccion"><i class="fa-solid fa-user"></i> Sobre Mí</h2>
+            <div class="tarjetaBase">
+                <p>Estudiante de <strong>4.º semestre de Analista en TI en Universidad ORT Uruguay</strong>. Me apasiona el desarrollo Full-Stack, abordando desde el diseño de la interfaz visual y la experiencia de usuario hasta la arquitectura de datos y la lógica del servidor.</p>
+                <p>Dominio fluido de <strong>JavaScript ES6+, Node.js y React</strong> trabajando en <strong>VS Code</strong>, complementado con el ecosistema corporativo de <strong>C#, .NET Core, Java y SQL Server</strong>. Aplico componentes responsivos con CSS3 y Bootstrap, garantizando aplicaciones ágiles y funcionales.</p>
+            </div>
+        </div>
+    </section>
 
-    <div class="proyecto">
-      <h3>Aerolínea MVC</h3>
-      <p>Sistema web de gestión de vuelos con roles de usuario y administrador.</p>
-      <p class="tec">C# · ASP.NET MVC</p>
-    </div>
+    <section id="tecnologias" class="seccionGenerica">
+        <div class="contenedor">
+            <h2 class="tituloSeccion"><i class="fa-solid fa-laptop-code"></i> Stack Tecnológico</h2>
+            <div class="grillaHabilidades">
+                <div class="tarjetaHabilidad">
+                    <i class="fa-brands fa-react iconoTecnologia"></i>
+                    <h3>Front-End</h3>
+                    <p>React.js, JavaScript (ES6+), HTML5, CSS3, Bootstrap, diseño responsive y consumo de APIs RESTful.</p>
+                </div>
+                <div class="tarjetaHabilidad">
+                    <i class="fa-brands fa-node-js iconoTecnologia"></i>
+                    <h3>Back-End & JS Node</h3>
+                    <p>Node.js, Express, desarrollo e integración de APIs REST, entornos VS Code, manejo de JSON y asincronismo.</p>
+                </div>
+                <div class="tarjetaHabilidad">
+                    <i class="fa-solid fa-server iconoTecnologia"></i>
+                    <h3>.NET, Java & DBs</h3>
+                    <p>C#, .NET Core, Entity Framework, Java, SQL Server, Programación Orientada a Objetos, Estructuras de Datos y Arquitectura en capas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="proyecto">
-      <h3>Clínica New Age</h3>
-      <p>Sistema de base de datos avanzado con procedimientos almacenados, funciones, triggers y consultas complejas. Integración conceptual con MongoDB.</p>
-      <p class="tec">SQL Server · T-SQL · MongoDB</p>
-    </div>
+    <section id="proyectos" class="seccionGenerica">
+        <div class="contenedor">
+            <h2 class="tituloSeccion"><i class="fa-solid fa-diagram-project"></i> Proyectos Destacados</h2>
+            <div class="grillaProyectos">
+                
+                <div class="tarjetaProyecto proyectoEstrella">
+                    <div class="encabezadoProyecto">
+                        <i class="fa-solid fa-star iconoEstrella"></i>
+                        <div class="enlacesInternosProyecto">
+                            <a href="https://videojuegos-main-deploy-parte2.vercel.app/" target="_blank" aria-label="Demo en vivo"><i class="fa-solid fa-rocket"></i></a>
+                            <a href="https://github.com/MateoB18" target="_blank" aria-label="Código en GitHub"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3>GameTracker AI — Plataforma Full-Stack</h3>
+                    <p>Aplicación web interactiva desarrollada con <strong>React, JavaScript y Node.js</strong> en VS Code. Integra la API de RAWG para catálogo de videojuegos y un asistente con IA para sugerencias inteligentes, gestión de avatar y personalización.</p>
+                    <ul class="etiquetasProyecto">
+                        <li>React</li>
+                        <li>JavaScript</li>
+                        <li>Node.js</li>
+                        <li>CSS3</li>
+                        <li>RAWG API</li>
+                        <li>Vercel</li>
+                    </ul>
+                </div>
 
-  </section>
+                <div class="tarjetaProyecto">
+                    <div class="encabezadoProyecto">
+                        <i class="fa-solid fa-folder-open iconoCarpeta"></i>
+                        <div class="enlacesInternosProyecto">
+                            <a href="https://github.com/MateoB18" target="_blank" aria-label="Código en GitHub"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3>Roteo — Sistema de Gestión Interna</h3>
+                    <p>Sistema empresarial desarrollado en C# y .NET Core MVC. Implementa arquitectura en capas limpia, DTOs, Mappers, Entity Framework y persistencia con SQL Server.</p>
+                    <ul class="etiquetasProyecto">
+                        <li>C#</li>
+                        <li>.NET Core</li>
+                        <li>Entity Framework</li>
+                        <li>SQL Server</li>
+                    </ul>
+                </div>
 
-  <!-- CONTACTO -->
-  <section id="contacto">
-    <h2>Contacto</h2>
-    <p>📧 <a href="mailto:mateobragunde11@gmail.com">mateobragunde11@gmail.com</a></p>
-    <p>💼 <a href="https://www.linkedin.com/in/mateo-bragunde-dufour-627602361" target="_blank">LinkedIn</a></p>
-    <p>🌐 <a href="https://MateoB18.github.io" target="_blank">Portfolio Web</a></p>
-    <p>🐱 <a href="https://github.com/MateoB18" target="_blank">GitHub</a></p>
-  </section>
+                <div class="tarjetaProyecto">
+                    <div class="encabezadoProyecto">
+                        <i class="fa-solid fa-folder-open iconoCarpeta"></i>
+                        <div class="enlacesInternosProyecto">
+                            <a href="https://github.com/MateoB18" target="_blank" aria-label="Código en GitHub"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3>Sistema Aeropuerto — Algoritmos & Estructuras de Datos</h3>
+                    <p>Aplicación desarrollada en Java (NetBeans) para la gestión dinámica de operaciones aeroportuarias. Implementa estructuras de datos genéricas (listas, pilas y colas) aplicando el principio de encapsulamiento y abstracción de caja negra.</p>
+                    <ul class="etiquetasProyecto">
+                        <li>Java</li>
+                        <li>NetBeans</li>
+                        <li>Estructuras de Datos</li>
+                        <li>Pilas & Colas</li>
+                        <li>POO</li>
+                    </ul>
+                </div>
 
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2025 Mateo Bragunde</p>
-  </footer>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="seccionGenerica">
+        <div class="contenedor">
+            <h2 class="tituloSeccion"><i class="fa-solid fa-envelope"></i> Contacto</h2>
+            <div class="cajaContacto">
+                <p>¿Tienes un proyecto en mente, buscas un Desarrollador Full-Stack o deseas conversar sobre oportunidades laborales? ¡Ponte en contacto conmigo!</p>
+                <a href="mailto:mateobragunde11@gmail.com" class="boton botonPrincipal"><i class="fa-solid fa-paper-plane"></i> Enviar Mensaje</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="piePagina">
+        <div class="contenedor">
+            <p>&copy; 2026 Mateo Bragunde Dufour. Desarrollador Full-Stack.</p>
+        </div>
+    </footer>
 
 </body>
 </html>
