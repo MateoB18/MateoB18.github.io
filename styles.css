@@ -5,6 +5,10 @@
     --rojoCarrera: #e10600;
     --rojoCarreraEncima: #ff1a12;
     --amarilloPodio: #ffc300;
+    --azulRacing: #1c3f7c;
+    --azulRacingClaro: #3868b8;
+    --azulTexto: #7ab0ff;
+    --resplandorAzul: rgba(28, 63, 124, 0.35);
     --textoPrincipal: #f2f2f0;
     --textoSecundario: #8b8f96;
     --borde: #24262c;
@@ -68,7 +72,7 @@ body {
 }
 
 .marca:hover {
-    color: var(--rojoCarrera);
+    color: var(--azulRacingClaro);
 }
 
 .listaNavegacion {
@@ -89,7 +93,7 @@ body {
 }
 
 .enlaceNavegacion:hover {
-    color: var(--rojoCarrera);
+    color: var(--azulRacingClaro);
 }
 
 /* FRANJA DE CARRERA */
@@ -98,8 +102,8 @@ body {
     width: 100%;
     background: repeating-linear-gradient(
         -45deg,
-        var(--rojoCarrera),
-        var(--rojoCarrera) 22px,
+        var(--azulRacing),
+        var(--azulRacing) 22px,
         var(--textoPrincipal) 22px,
         var(--textoPrincipal) 44px
     );
@@ -126,14 +130,14 @@ body {
     height: 210px;
     border-radius: 50%;
     padding: 5px;
-    background: linear-gradient(135deg, var(--rojoCarrera), var(--amarilloPodio));
-    box-shadow: 0 0 35px var(--resplandorRojo);
+    background: linear-gradient(135deg, var(--azulRacing), var(--rojoCarrera));
+    box-shadow: 0 0 35px var(--resplandorAzul);
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .marcoAvatar:hover {
     transform: scale(1.03);
-    box-shadow: 0 0 50px rgba(225, 6, 0, 0.4);
+    box-shadow: 0 0 50px rgba(28, 63, 124, 0.5);
 }
 
 .imagenPerfil {
@@ -178,7 +182,7 @@ body {
 }
 
 .textoResaltado {
-    color: var(--rojoCarrera);
+    color: var(--azulTexto);
 }
 
 .contenidoInicio h2 {
@@ -221,15 +225,15 @@ body {
 }
 
 .botonPrincipal {
-    background-color: var(--rojoCarrera);
+    background-color: var(--azulRacing);
     color: #ffffff;
-    box-shadow: 0 4px 15px rgba(225, 6, 0, 0.3);
+    box-shadow: 0 4px 15px rgba(28, 63, 124, 0.4);
 }
 
 .botonPrincipal:hover {
-    background-color: var(--rojoCarreraEncima);
+    background-color: var(--azulRacingClaro);
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(225, 6, 0, 0.4);
+    box-shadow: 0 6px 20px rgba(28, 63, 124, 0.5);
 }
 
 .botonSecundario {
@@ -277,7 +281,7 @@ body {
 }
 
 .tituloSeccion i {
-    color: var(--rojoCarrera);
+    color: var(--azulRacingClaro);
 }
 
 .tituloSubseccion {
@@ -295,7 +299,7 @@ body {
     padding: 32px;
     border-radius: 8px;
     border: 1px solid var(--borde);
-    border-left: 3px solid var(--rojoCarrera);
+    border-left: 3px solid var(--azulRacing);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
@@ -349,6 +353,17 @@ body {
     font-size: 0.92rem;
 }
 
+.reflexionHobbies {
+    margin-top: 24px;
+    padding: 20px 24px;
+    border-left: 3px solid var(--azulRacing);
+    background-color: var(--fondoTarjeta);
+    border-radius: 0 8px 8px 0;
+    color: var(--textoSecundario);
+    font-size: 1rem;
+    font-style: italic;
+}
+
 /* HABILIDADES */
 .grillaHabilidades {
     display: grid;
@@ -367,13 +382,13 @@ body {
 .tarjetaHabilidad:hover {
     transform: translateY(-7px);
     background-color: var(--fondoTarjetaEncima);
-    border-color: var(--rojoCarrera);
-    box-shadow: 0 10px 25px var(--resplandorRojo);
+    border-color: var(--azulRacing);
+    box-shadow: 0 10px 25px var(--resplandorAzul);
 }
 
 .iconoTecnologia {
     font-size: 2.5rem;
-    color: var(--rojoCarrera);
+    color: var(--azulRacingClaro);
     margin-bottom: 18px;
 }
 
@@ -409,13 +424,13 @@ body {
 
 .tarjetaProyecto:hover {
     transform: translateY(-7px);
-    border-color: var(--rojoCarrera);
-    box-shadow: 0 10px 25px var(--resplandorRojo);
+    border-color: var(--azulRacing);
+    box-shadow: 0 10px 25px var(--resplandorAzul);
 }
 
 .proyectoEstrella {
     border-color: rgba(255, 195, 0, 0.4);
-    background: linear-gradient(180deg, rgba(225, 6, 0, 0.08) 0%, var(--fondoTarjeta) 100%);
+    background: linear-gradient(180deg, rgba(28, 63, 124, 0.12) 0%, var(--fondoTarjeta) 100%);
 }
 
 .encabezadoProyecto {
@@ -432,7 +447,7 @@ body {
 
 .iconoCarpeta {
     font-size: 1.5rem;
-    color: var(--rojoCarrera);
+    color: var(--azulRacingClaro);
 }
 
 .enlacesInternosProyecto {
@@ -447,7 +462,7 @@ body {
 }
 
 .enlacesInternosProyecto a:hover {
-    color: var(--rojoCarrera);
+    color: var(--azulRacingClaro);
 }
 
 .tarjetaProyecto h3 {
@@ -496,8 +511,8 @@ body {
 }
 
 .etiquetasProyecto li {
-    background-color: rgba(225, 6, 0, 0.1);
-    color: #ff6259;
+    background-color: rgba(28, 63, 124, 0.18);
+    color: var(--azulTexto);
     padding: 5px 12px;
     border-radius: 4px;
     font-family: var(--tipografiaDisplay);
