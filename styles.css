@@ -6,11 +6,11 @@
     --rojoCarreraEncima: #ff1a12;
     --amarilloPodio: #ffc300;
     --azulRacing: #1c3f7c;
-    --azulRacingClaro: #3868b8;
+    --azulRacingClaro: #5b93d9;
     --azulTexto: #7ab0ff;
     --resplandorAzul: rgba(28, 63, 124, 0.35);
     --textoPrincipal: #f2f2f0;
-    --textoSecundario: #8b8f96;
+    --textoSecundario: #a3a8b1;
     --borde: #24262c;
     --resplandorRojo: rgba(225, 6, 0, 0.25);
     --tipografiaDisplay: 'Rajdhani', sans-serif;
@@ -102,8 +102,8 @@ body {
     width: 100%;
     background: repeating-linear-gradient(
         -45deg,
-        var(--azulRacing),
-        var(--azulRacing) 22px,
+        var(--rojoCarrera),
+        var(--rojoCarrera) 22px,
         var(--textoPrincipal) 22px,
         var(--textoPrincipal) 44px
     );
@@ -130,7 +130,7 @@ body {
     height: 210px;
     border-radius: 50%;
     padding: 5px;
-    background: linear-gradient(135deg, var(--azulRacing), var(--rojoCarrera));
+    background: linear-gradient(135deg, var(--azulRacingClaro), var(--azulRacing));
     box-shadow: 0 0 35px var(--resplandorAzul);
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
