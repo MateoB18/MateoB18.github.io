@@ -1,15 +1,16 @@
 :root {
-    --colorPrimario: #2563eb;
-    --colorPrimarioEncima: #1d4ed8;
-    --colorFondo: #0b0f19;
-    --colorTarjeta: #151d30;
-    --colorTarjetaEncima: #1e2942;
-    --colorTexto: #f8fafc;
-    --colorTextoSecundario: #94a3b8;
-    --colorCian: #38bdf8;
-    --colorBorde: #23314d;
-    --resplandor: rgba(56, 189, 248, 0.25);
-    --tipografia: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --fondo: #0a0b0d;
+    --fondoTarjeta: #15171c;
+    --fondoTarjetaEncima: #1c1f26;
+    --rojoCarrera: #e10600;
+    --rojoCarreraEncima: #ff1a12;
+    --amarilloPodio: #ffc300;
+    --textoPrincipal: #f2f2f0;
+    --textoSecundario: #8b8f96;
+    --borde: #24262c;
+    --resplandorRojo: rgba(225, 6, 0, 0.25);
+    --tipografiaDisplay: 'Rajdhani', sans-serif;
+    --tipografiaTexto: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
 * {
@@ -23,10 +24,10 @@ html {
 }
 
 body {
-    background-color: var(--colorFondo);
-    background-image: radial-gradient(circle at 50% 0%, #152238 0%, var(--colorFondo) 70%);
-    color: var(--colorTexto);
-    font-family: var(--tipografia);
+    background-color: var(--fondo);
+    background-image: radial-gradient(circle at 50% 0%, #16181d 0%, var(--fondo) 65%);
+    color: var(--textoPrincipal);
+    font-family: var(--tipografiaTexto);
     line-height: 1.6;
     font-size: 16px;
 }
@@ -43,9 +44,9 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(11, 15, 25, 0.85);
+    background-color: rgba(10, 11, 13, 0.85);
     backdrop-filter: blur(12px);
-    border-bottom: 1px solid var(--colorBorde);
+    border-bottom: 1px solid var(--borde);
     z-index: 1000;
 }
 
@@ -57,16 +58,17 @@ body {
 }
 
 .marca {
-    color: var(--colorCian);
-    font-size: 1.6rem;
+    font-family: var(--tipografiaDisplay);
+    color: var(--textoPrincipal);
+    font-size: 1.7rem;
     font-weight: 700;
     text-decoration: none;
-    letter-spacing: -0.5px;
-    transition: transform 0.3s ease;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
 }
 
 .marca:hover {
-    transform: scale(1.05);
+    color: var(--rojoCarrera);
 }
 
 .listaNavegacion {
@@ -76,20 +78,37 @@ body {
 }
 
 .enlaceNavegacion {
-    color: var(--colorTextoSecundario);
+    color: var(--textoSecundario);
     text-decoration: none;
+    font-family: var(--tipografiaDisplay);
     font-size: 1.05rem;
-    font-weight: 500;
-    transition: all 0.3s ease;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
 }
 
 .enlaceNavegacion:hover {
-    color: var(--colorCian);
+    color: var(--rojoCarrera);
+}
+
+/* FRANJA DE CARRERA */
+.franjaCarrera {
+    height: 10px;
+    width: 100%;
+    background: repeating-linear-gradient(
+        -45deg,
+        var(--rojoCarrera),
+        var(--rojoCarrera) 22px,
+        var(--textoPrincipal) 22px,
+        var(--textoPrincipal) 44px
+    );
+    opacity: 0.9;
 }
 
 /* INICIO / HERO */
 .seccionInicio {
-    padding: 130px 0 60px;
+    padding: 150px 0 60px;
 }
 
 .contenedorInicio {
@@ -107,14 +126,14 @@ body {
     height: 210px;
     border-radius: 50%;
     padding: 5px;
-    background: linear-gradient(135deg, var(--colorCian), var(--colorPrimario));
-    box-shadow: 0 0 35px var(--resplandor);
+    background: linear-gradient(135deg, var(--rojoCarrera), var(--amarilloPodio));
+    box-shadow: 0 0 35px var(--resplandorRojo);
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .marcoAvatar:hover {
     transform: scale(1.03);
-    box-shadow: 0 0 50px rgba(56, 189, 248, 0.4);
+    box-shadow: 0 0 50px rgba(225, 6, 0, 0.4);
 }
 
 .imagenPerfil {
@@ -122,7 +141,7 @@ body {
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
-    background-color: var(--colorTarjeta);
+    background-color: var(--fondoTarjeta);
 }
 
 .contenidoInicio {
@@ -130,12 +149,16 @@ body {
 }
 
 .insigniaEstado {
-    background-color: rgba(56, 189, 248, 0.1);
-    color: var(--colorCian);
+    background-color: rgba(16, 185, 129, 0.1);
+    color: #10b981;
     padding: 6px 14px;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    border: 1px solid rgba(56, 189, 248, 0.3);
+    border-radius: 4px;
+    font-family: var(--tipografiaDisplay);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    border: 1px solid rgba(16, 185, 129, 0.3);
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -144,30 +167,32 @@ body {
 
 .insigniaEstado i {
     font-size: 0.55rem;
-    color: #10b981;
 }
 
 .contenidoInicio h1 {
-    font-size: 3rem;
-    line-height: 1.15;
+    font-family: var(--tipografiaDisplay);
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 1.1;
     margin-bottom: 12px;
 }
 
 .textoResaltado {
-    color: var(--colorCian);
-    text-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
+    color: var(--rojoCarrera);
 }
 
 .contenidoInicio h2 {
-    font-size: 1.35rem;
-    color: var(--colorTextoSecundario);
-    font-weight: 400;
+    font-family: var(--tipografiaDisplay);
+    font-size: 1.4rem;
+    color: var(--textoSecundario);
+    font-weight: 600;
+    letter-spacing: 0.3px;
     margin-bottom: 18px;
 }
 
 .contenidoInicio p {
     max-width: 650px;
-    color: var(--colorTextoSecundario);
+    color: var(--textoSecundario);
     margin-bottom: 28px;
     font-size: 1.05rem;
 }
@@ -184,37 +209,40 @@ body {
     align-items: center;
     gap: 10px;
     padding: 12px 26px;
-    border-radius: 8px;
-    font-size: 1rem;
+    border-radius: 4px;
+    font-family: var(--tipografiaDisplay);
+    font-size: 1.05rem;
     font-weight: 600;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
     text-decoration: none;
     transition: all 0.3s ease;
     cursor: pointer;
 }
 
 .botonPrincipal {
-    background-color: var(--colorPrimario);
+    background-color: var(--rojoCarrera);
     color: #ffffff;
-    box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+    box-shadow: 0 4px 15px rgba(225, 6, 0, 0.3);
 }
 
 .botonPrincipal:hover {
-    background-color: var(--colorPrimarioEncima);
+    background-color: var(--rojoCarreraEncima);
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+    box-shadow: 0 6px 20px rgba(225, 6, 0, 0.4);
 }
 
 .botonSecundario {
     background-color: transparent;
-    color: var(--colorTexto);
-    border: 1px solid var(--colorBorde);
+    color: var(--textoPrincipal);
+    border: 1px solid var(--borde);
 }
 
 .botonSecundario:hover {
-    border-color: var(--colorCian);
-    color: var(--colorCian);
+    border-color: var(--amarilloPodio);
+    color: var(--amarilloPodio);
     transform: translateY(-2px);
-    background-color: rgba(56, 189, 248, 0.05);
+    background-color: rgba(255, 195, 0, 0.05);
 }
 
 .enlacesSociales {
@@ -223,23 +251,25 @@ body {
 }
 
 .enlacesSociales a {
-    color: var(--colorTextoSecundario);
+    color: var(--textoSecundario);
     font-size: 1.6rem;
     transition: all 0.3s ease;
 }
 
 .enlacesSociales a:hover {
-    color: var(--colorCian);
+    color: var(--rojoCarrera);
     transform: translateY(-3px);
 }
 
 /* SECCIONES GENÉRICAS */
 .seccionGenerica {
-    padding: 50px 0;
+    padding: 60px 0;
 }
 
 .tituloSeccion {
-    font-size: 2rem;
+    font-family: var(--tipografiaDisplay);
+    font-size: 2.2rem;
+    font-weight: 700;
     margin-bottom: 30px;
     display: flex;
     align-items: center;
@@ -247,25 +277,76 @@ body {
 }
 
 .tituloSeccion i {
-    color: var(--colorCian);
+    color: var(--rojoCarrera);
+}
+
+.tituloSubseccion {
+    font-family: var(--tipografiaDisplay);
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    color: var(--textoSecundario);
+    margin: 40px 0 20px;
 }
 
 .tarjetaBase {
-    background-color: var(--colorTarjeta);
+    background-color: var(--fondoTarjeta);
     padding: 32px;
-    border-radius: 16px;
-    border: 1px solid var(--colorBorde);
+    border-radius: 8px;
+    border: 1px solid var(--borde);
+    border-left: 3px solid var(--rojoCarrera);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 .tarjetaBase p {
     margin-bottom: 15px;
-    color: var(--colorTextoSecundario);
+    color: var(--textoSecundario);
     font-size: 1.05rem;
 }
 
 .tarjetaBase p:last-child {
     margin-bottom: 0;
+}
+
+/* HOBBIES */
+.grillaHobbies {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+}
+
+.tarjetaHobby {
+    background-color: var(--fondoTarjeta);
+    padding: 24px;
+    border-radius: 8px;
+    border: 1px solid var(--borde);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.tarjetaHobby:hover {
+    transform: translateY(-5px);
+    border-color: var(--amarilloPodio);
+    background-color: var(--fondoTarjetaEncima);
+}
+
+.iconoHobby {
+    font-size: 1.8rem;
+    color: var(--amarilloPodio);
+    margin-bottom: 14px;
+}
+
+.tarjetaHobby h4 {
+    font-family: var(--tipografiaDisplay);
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.tarjetaHobby p {
+    color: var(--textoSecundario);
+    font-size: 0.92rem;
 }
 
 /* HABILIDADES */
@@ -276,33 +357,35 @@ body {
 }
 
 .tarjetaHabilidad {
-    background-color: var(--colorTarjeta);
+    background-color: var(--fondoTarjeta);
     padding: 28px;
-    border-radius: 16px;
-    border: 1px solid var(--colorBorde);
+    border-radius: 8px;
+    border: 1px solid var(--borde);
     transition: all 0.3s ease;
 }
 
 .tarjetaHabilidad:hover {
     transform: translateY(-7px);
-    background-color: var(--colorTarjetaEncima);
-    border-color: var(--colorCian);
-    box-shadow: 0 10px 25px var(--resplandor);
+    background-color: var(--fondoTarjetaEncima);
+    border-color: var(--rojoCarrera);
+    box-shadow: 0 10px 25px var(--resplandorRojo);
 }
 
 .iconoTecnologia {
     font-size: 2.5rem;
-    color: var(--colorCian);
+    color: var(--rojoCarrera);
     margin-bottom: 18px;
 }
 
 .tarjetaHabilidad h3 {
-    font-size: 1.3rem;
+    font-family: var(--tipografiaDisplay);
+    font-size: 1.35rem;
+    font-weight: 600;
     margin-bottom: 10px;
 }
 
 .tarjetaHabilidad p {
-    color: var(--colorTextoSecundario);
+    color: var(--textoSecundario);
     font-size: 0.98rem;
 }
 
@@ -314,9 +397,9 @@ body {
 }
 
 .tarjetaProyecto {
-    background-color: var(--colorTarjeta);
-    border: 1px solid var(--colorBorde);
-    border-radius: 16px;
+    background-color: var(--fondoTarjeta);
+    border: 1px solid var(--borde);
+    border-radius: 8px;
     padding: 28px;
     display: flex;
     flex-direction: column;
@@ -326,13 +409,13 @@ body {
 
 .tarjetaProyecto:hover {
     transform: translateY(-7px);
-    border-color: var(--colorCian);
-    box-shadow: 0 10px 25px var(--resplandor);
+    border-color: var(--rojoCarrera);
+    box-shadow: 0 10px 25px var(--resplandorRojo);
 }
 
 .proyectoEstrella {
-    border-color: rgba(56, 189, 248, 0.4);
-    background: linear-gradient(180deg, rgba(37, 99, 235, 0.1) 0%, var(--colorTarjeta) 100%);
+    border-color: rgba(255, 195, 0, 0.4);
+    background: linear-gradient(180deg, rgba(225, 6, 0, 0.08) 0%, var(--fondoTarjeta) 100%);
 }
 
 .encabezadoProyecto {
@@ -344,12 +427,12 @@ body {
 
 .iconoEstrella {
     font-size: 1.5rem;
-    color: #f59e0b;
+    color: var(--amarilloPodio);
 }
 
 .iconoCarpeta {
     font-size: 1.5rem;
-    color: var(--colorCian);
+    color: var(--rojoCarrera);
 }
 
 .enlacesInternosProyecto {
@@ -358,24 +441,51 @@ body {
 }
 
 .enlacesInternosProyecto a {
-    color: var(--colorTextoSecundario);
+    color: var(--textoSecundario);
     font-size: 1.3rem;
     transition: color 0.3s ease;
 }
 
 .enlacesInternosProyecto a:hover {
-    color: var(--colorCian);
+    color: var(--rojoCarrera);
 }
 
 .tarjetaProyecto h3 {
-    font-size: 1.3rem;
-    margin-bottom: 10px;
+    font-family: var(--tipografiaDisplay);
+    font-size: 1.35rem;
+    font-weight: 600;
+    margin-bottom: 12px;
 }
 
 .tarjetaProyecto p {
-    color: var(--colorTextoSecundario);
+    color: var(--textoSecundario);
     font-size: 0.98rem;
     margin-bottom: 20px;
+}
+
+.insigniaDisponible {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: rgba(16, 185, 129, 0.1);
+    color: #10b981;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    padding: 6px 14px;
+    border-radius: 4px;
+    font-family: var(--tipografiaDisplay);
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-bottom: 14px;
+    width: fit-content;
+    transition: all 0.3s ease;
+}
+
+.insigniaDisponible:hover {
+    background-color: rgba(16, 185, 129, 0.18);
+    transform: translateY(-2px);
 }
 
 .etiquetasProyecto {
@@ -386,25 +496,27 @@ body {
 }
 
 .etiquetasProyecto li {
-    background-color: rgba(56, 189, 248, 0.1);
-    color: var(--colorCian);
+    background-color: rgba(225, 6, 0, 0.1);
+    color: #ff6259;
     padding: 5px 12px;
-    border-radius: 6px;
+    border-radius: 4px;
+    font-family: var(--tipografiaDisplay);
     font-size: 0.85rem;
-    font-weight: 500;
+    font-weight: 600;
+    letter-spacing: 0.2px;
 }
 
 /* CONTACTO */
 .cajaContacto {
-    background-color: var(--colorTarjeta);
-    border: 1px solid var(--colorBorde);
-    border-radius: 16px;
+    background-color: var(--fondoTarjeta);
+    border: 1px solid var(--borde);
+    border-radius: 8px;
     padding: 45px 30px;
     text-align: center;
 }
 
 .cajaContacto p {
-    color: var(--colorTextoSecundario);
+    color: var(--textoSecundario);
     font-size: 1.1rem;
     max-width: 600px;
     margin: 0 auto 25px;
@@ -412,12 +524,11 @@ body {
 
 /* FOOTER */
 .piePagina {
-    border-top: 1px solid var(--colorBorde);
+    border-top: 1px solid var(--borde);
     padding: 30px 0;
     text-align: center;
-    color: var(--colorTextoSecundario);
+    color: var(--textoSecundario);
     font-size: 0.95rem;
-    margin-top: 20px;
 }
 
 /* RESPONSIVE */
@@ -429,7 +540,7 @@ body {
     }
 
     .contenidoInicio h1 {
-        font-size: 2.2rem;
+        font-size: 2.3rem;
     }
 
     .botonesInicio, .enlacesSociales {
