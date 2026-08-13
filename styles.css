@@ -441,21 +441,11 @@ body {
     box-shadow: 0 10px 25px var(--resplandorAzul);
 }
 
-.proyectoEstrella {
-    border-color: rgba(255, 195, 0, 0.4);
-    background: linear-gradient(180deg, rgba(28, 63, 124, 0.12) 0%, var(--fondoTarjeta) 100%);
-}
-
 .encabezadoProyecto {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 18px;
-}
-
-.iconoEstrella {
-    font-size: 1.5rem;
-    color: var(--amarilloPodio);
 }
 
 .iconoCarpeta {
@@ -489,31 +479,6 @@ body {
     color: var(--textoSecundario);
     font-size: 0.98rem;
     margin-bottom: 20px;
-}
-
-.insigniaDisponible {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background-color: rgba(16, 185, 129, 0.1);
-    color: #10b981;
-    border: 1px solid rgba(16, 185, 129, 0.3);
-    padding: 6px 14px;
-    border-radius: 4px;
-    font-family: var(--tipografiaDisplay);
-    font-size: 0.85rem;
-    font-weight: 600;
-    letter-spacing: 0.3px;
-    text-transform: uppercase;
-    text-decoration: none;
-    margin-bottom: 14px;
-    width: fit-content;
-    transition: all 0.3s ease;
-}
-
-.insigniaDisponible:hover {
-    background-color: rgba(16, 185, 129, 0.18);
-    transform: translateY(-2px);
 }
 
 .etiquetasProyecto {
