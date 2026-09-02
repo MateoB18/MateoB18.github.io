@@ -173,6 +173,28 @@ body {
     font-size: 0.55rem;
 }
 
+.insigniaCredencial {
+    background-color: rgba(255, 195, 0, 0.1);
+    color: var(--amarilloPodio);
+    padding: 6px 14px;
+    border-radius: 4px;
+    font-family: var(--tipografiaDisplay);
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    border: 1px solid rgba(255, 195, 0, 0.3);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 18px;
+    margin-left: 10px;
+}
+
+.insigniaCredencial i {
+    font-size: 0.85rem;
+}
+
 .contenidoInicio h1 {
     font-family: var(--tipografiaDisplay);
     font-size: 3.2rem;
@@ -542,5 +564,9 @@ body {
 
     .listaNavegacion {
         display: none;
+    }
+
+    .insigniaCredencial {
+        margin-left: 0;
     }
 }
